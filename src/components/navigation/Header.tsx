@@ -3,14 +3,13 @@
 import { useState } from "react";
 import Link from "next/link";
 import { NAV_LINKS } from "@/lib/data";
-import { Button } from "@/components/ui";
 import { cn } from "@/lib/utils";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-white/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full bg-white">
       <div className="container-site flex h-16 items-center justify-between lg:h-20">
         <Link href="/" className="text-xl font-extrabold tracking-tight">
           Crownway Admissions
@@ -36,10 +35,9 @@ export function Header() {
             href="https://wa.me/2348123456789?text=Hi%20Crownway%2C%20I%27d%20like%20to%20book%20a%20consultation"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-secondary px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-secondary/90"
           >
-            <Button variant="secondary" size="sm">
-              Book consultation
-            </Button>
+            Book consultation
           </a>
         </div>
 
@@ -93,10 +91,9 @@ export function Header() {
               href="https://wa.me/2348123456789?text=Hi%20Crownway%2C%20I%27d%20like%20to%20book%20a%20consultation"
               target="_blank"
               rel="noopener noreferrer"
+              className="mt-2 inline-flex w-fit items-center justify-center rounded-full bg-secondary px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-secondary/90"
             >
-              <Button variant="secondary" size="sm" className="mt-2 w-fit">
-                Book consultation
-              </Button>
+              Book consultation
             </a>
           </nav>
         </div>

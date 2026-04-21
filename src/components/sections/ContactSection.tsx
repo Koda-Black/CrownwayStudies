@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { Button } from "@/components/ui";
 import { ScrollReveal } from "@/components/animations";
 import { contactFormSchema } from "@/lib/validation";
 
@@ -40,10 +39,10 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="bg-surface py-20 md:py-28">
+    <section id="contact" className="bg-white py-20 md:py-28">
       <div className="container-site max-w-2xl">
         <ScrollReveal>
-          <h2 className="text-4xl font-extrabold tracking-tight uppercase md:text-5xl">
+          <h2 className="text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl">
             Get in touch
           </h2>
           <p className="mt-3 text-base text-muted">
@@ -54,7 +53,7 @@ export function ContactSection() {
 
         {submitted ? (
           <ScrollReveal>
-            <div className="mt-10 rounded-2xl bg-white p-8 text-center">
+            <div className="mt-10 rounded-2xl bg-surface p-8 text-center">
               <p className="text-lg font-semibold text-primary">
                 Thank you for reaching out!
               </p>
@@ -71,16 +70,14 @@ export function ContactSection() {
               noValidate
             >
               <div>
-                <label htmlFor="name" className="block text-sm font-medium">
-                  Full name
-                </label>
                 <input
                   id="name"
                   name="name"
                   type="text"
                   required
                   maxLength={100}
-                  className="mt-1.5 w-full rounded-xl border border-border bg-white px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="Full name"
+                  className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
                 />
                 {errors.name && (
                   <p className="mt-1 text-xs text-red-500">{errors.name}</p>
@@ -88,15 +85,13 @@ export function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium">
-                  Email address
-                </label>
                 <input
                   id="email"
                   name="email"
                   type="email"
                   required
-                  className="mt-1.5 w-full rounded-xl border border-border bg-white px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="Email address"
+                  className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
                 />
                 {errors.email && (
                   <p className="mt-1 text-xs text-red-500">{errors.email}</p>
@@ -104,22 +99,17 @@ export function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium">
-                  Phone / WhatsApp (optional)
-                </label>
                 <input
                   id="phone"
                   name="phone"
                   type="tel"
                   maxLength={20}
-                  className="mt-1.5 w-full rounded-xl border border-border bg-white px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="Phone / WhatsApp (optional)"
+                  className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium">
-                  Message
-                </label>
                 <textarea
                   id="message"
                   name="message"
@@ -127,16 +117,19 @@ export function ContactSection() {
                   rows={4}
                   maxLength={2000}
                   placeholder="Tell us about your study goals..."
-                  className="mt-1.5 w-full resize-none rounded-xl border border-border bg-white px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
+                  className="w-full resize-none rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
                 />
                 {errors.message && (
                   <p className="mt-1 text-xs text-red-500">{errors.message}</p>
                 )}
               </div>
 
-              <Button type="submit" size="md">
-                Send message
-              </Button>
+              <button
+                type="submit"
+                className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-primary-dark cursor-pointer"
+              >
+                Send
+              </button>
 
               <div className="flex items-start gap-3">
                 <input
@@ -146,7 +139,7 @@ export function ContactSection() {
                   className="mt-1 h-4 w-4 rounded border-border text-primary focus:ring-primary"
                 />
                 <label htmlFor="consent" className="text-xs text-muted">
-                  By submitting, I confirm that I have read and agree to the{" "}
+                  By proceeding, I confirm that I have read and agree to the{" "}
                   <a
                     href="/privacy"
                     className="underline hover:text-secondary transition-colors"

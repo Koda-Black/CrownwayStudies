@@ -14,11 +14,7 @@ describe("FeaturedCourses", () => {
 
   it("renders service cards", () => {
     render(<FeaturedCourses />);
-    expect(
-      screen.getByText("University admission"),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByText("Visa guidance"),
-    ).toBeInTheDocument();
+    expect(screen.getByText("University admission")).toBeInTheDocument();
+    expect(screen.getByText("Visa guidance")).toBeInTheDocument();
   });
 });

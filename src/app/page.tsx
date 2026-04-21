@@ -27,9 +27,9 @@ export default function HomePage() {
         <TrustedBySection />
         <CategoriesSection />
         <CTASection />
+        <ContactSection />
         <InsightsSection />
         <FAQSection />
-        <ContactSection />
       </main>
       <Footer />
     </>

@@ -1,64 +1,38 @@
 "use client";
 
 import { PROCESS_STEPS } from "@/lib/data";
-import { SectionHeading } from "@/components/ui";
 import { ScrollReveal } from "@/components/animations";
 
 export function CategoriesSection() {
   return (
-    <section id="process" className="bg-white py-20 md:py-28">
+    <section id="process" className="bg-surface py-20 md:py-28">
       <div className="container-site">
         <ScrollReveal>
-          <SectionHeading
-            title="How it works"
-            subtitle="Our simple 5-step process takes you from dream to departure in as little as 8 weeks."
-            align="center"
-          />
+          <h2 className="text-center text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl lg:text-6xl">
+            How it works
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-base text-muted">
+            Our simple 5-step process takes you from dream to departure in as
+            little as 8 weeks.
+          </p>
         </ScrollReveal>
 
-        <div className="relative mt-14">
-          <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-border lg:block" />
-
-          <div className="space-y-8 lg:space-y-12">
-            {PROCESS_STEPS.map((step, i) => (
-              <ScrollReveal key={step.id} delay={i * 100}>
-                <div
-                  className={`flex flex-col items-center gap-6 lg:flex-row lg:gap-16 ${
-                    i % 2 === 1 ? "lg:flex-row-reverse" : ""
-                  }`}
-                >
-                  <div className="flex-1 lg:text-right">
-                    {i % 2 === 0 && (
-                      <div className="rounded-3xl bg-surface p-8 transition-all duration-300 hover:shadow-lg md:p-10">
-                        <h3 className="text-2xl font-bold">{step.title}</h3>
-                        <p className="mt-2 text-sm text-muted leading-relaxed">
-                          {step.description}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="relative z-10 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-primary text-lg font-bold text-white shadow-lg">
-                    {step.step}
-                  </div>
-
-                  <div className="flex-1">
-                    {i % 2 === 1 && (
-                      <div className="rounded-3xl bg-surface p-8 transition-all duration-300 hover:shadow-lg md:p-10">
-                        <h3 className="text-2xl font-bold">{step.title}</h3>
-                        <p className="mt-2 text-sm text-muted leading-relaxed">
-                          {step.description}
-                        </p>
-                      </div>
-                    )}
-                  </div>
+        <div className="mt-14 flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
+          {PROCESS_STEPS.map((step, i) => (
+            <ScrollReveal key={step.id} delay={i * 80}>
+              <div className="flex w-[260px] flex-shrink-0 flex-col rounded-3xl bg-white p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-lg font-black text-primary">
+                  {step.step}
                 </div>
-              </ScrollReveal>
-            ))}
-          </div>
+                <h3 className="text-xl font-bold">{step.title}</h3>
+                <p className="mt-2 flex-1 text-sm text-muted leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            </ScrollReveal>
+          ))}
         </div>
       </div>
     </section>
   );
 }
-

@@ -19,7 +19,7 @@ export default function JsonLd() {
     sameAs: [
       "https://instagram.com/crownwayadmissions",
       "https://x.com/crownwayadm",
-      "https://tiktok.com/@crownwayadmissions"
+      "https://tiktok.com/@crownwayadmissions",
     ],
   };
 

@@ -5,6 +5,9 @@ export interface Service {
   price: string;
   note?: string;
   icon: string;
+  image: string;
+  lessons?: string;
+  hours?: string;
 }
 
 export interface Testimonial {
@@ -14,6 +17,7 @@ export interface Testimonial {
   programme: string;
   university: string;
   avatar: string;
+  image: string;
 }
 
 export interface FAQItem {

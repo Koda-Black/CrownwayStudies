@@ -14,9 +14,7 @@ describe("HeroSection", () => {
 
   it("contains the tagline text", () => {
     render(<HeroSection />);
-    expect(
-      screen.getByText(/your uk study journey/i),
-    ).toBeInTheDocument();
+    expect(screen.getByText(/your uk study journey/i)).toBeInTheDocument();
   });
 
   it("renders see our services link", () => {

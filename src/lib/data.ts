@@ -51,6 +51,10 @@ export const SERVICES: Service[] = [
       "We handle your entire application — from university selection to securing your CAS letter. Sit back while we do the heavy lifting.",
     price: "₦50,000",
     icon: "academic-cap",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/699187ec24408a48fd246daa_learn-grow-succeed-1.2-small.webp",
+    lessons: "Full service",
+    hours: "4–8 weeks",
   },
   {
     id: "2",
@@ -60,6 +64,10 @@ export const SERVICES: Service[] = [
     price: "Free for Masters*",
     note: "Paid for Masters by Research",
     icon: "document",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697dc671b38eb68fe87b64e6_gain-the-skills-to-succeed-1-p-1600.webp",
+    lessons: "1-on-1 review",
+    hours: "1–2 weeks",
   },
   {
     id: "3",
@@ -68,6 +76,10 @@ export const SERVICES: Service[] = [
       "Structured prep to help you achieve band 6.5+ on your first attempt. Includes mock tests and personalised feedback.",
     price: "₦35,000",
     icon: "chart",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697d011e9c8e5fd602f5e864_Smiling%20Man%20Portrait.webp",
+    lessons: "Mock tests",
+    hours: "6–8 weeks",
   },
   {
     id: "4",
@@ -76,6 +88,10 @@ export const SERVICES: Service[] = [
       "Complete document preparation and mock interview sessions. We've mastered what the embassy looks for.",
     price: "₦40,000",
     icon: "shield",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697d011c4fb208206e7f1c5e_Young%20Adult%20at%20Desk.webp",
+    lessons: "Full prep",
+    hours: "2–3 weeks",
   },
   {
     id: "5",
@@ -84,6 +100,10 @@ export const SERVICES: Service[] = [
       "We help you find suitable UK housing and book the best flight deals so you arrive stress-free.",
     price: "₦25,000",
     icon: "home",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697d011e8aa69188c0a01061_Warm%20Portrait%20of%20a%20Man.webp",
+    lessons: "Guided",
+    hours: "1–2 weeks",
   },
   {
     id: "6",
@@ -92,6 +112,10 @@ export const SERVICES: Service[] = [
       "Financial documentation support to meet UK visa requirements. We guide you on what's needed and how to present it.",
     price: "Contact us",
     icon: "banknote",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697d011ea738480c1ff68016_Portrait%20in%20Green%20Edited.webp",
+    lessons: "Advisory",
+    hours: "1 week",
   },
 ];
 
@@ -104,6 +128,8 @@ export const TESTIMONIALS: Testimonial[] = [
     programme: "MSc Data Science",
     university: "University of Manchester",
     avatar: "AO",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697cdaaef1c7c5d0e6241c57_learner-1-small.webp",
   },
   {
     id: "2",
@@ -113,6 +139,8 @@ export const TESTIMONIALS: Testimonial[] = [
     programme: "MBA",
     university: "University of Birmingham",
     avatar: "OA",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697cdaabb1a54ce947746229_learner-6-small.webp",
   },
   {
     id: "3",
@@ -122,6 +150,8 @@ export const TESTIMONIALS: Testimonial[] = [
     programme: "MSc Public Health",
     university: "University of Leeds",
     avatar: "CN",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697cdaacea0e030d9a8b2187_learner-3-small.webp",
   },
   {
     id: "4",
@@ -131,6 +161,8 @@ export const TESTIMONIALS: Testimonial[] = [
     programme: "MSc Engineering Management",
     university: "University of Nottingham",
     avatar: "EO",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697cdaacf590a1deb90d4312_learner-4-small.webp",
   },
   {
     id: "5",
@@ -140,6 +172,8 @@ export const TESTIMONIALS: Testimonial[] = [
     programme: "MSc International Relations",
     university: "University of Bristol",
     avatar: "FA",
+    image:
+      "https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697cdaae252867591a02cb90_learner-2-small.webp",
   },
 ];
 
