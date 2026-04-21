@@ -26,38 +26,70 @@ export function CTASection() {
   return (
     <section className="bg-white py-20 md:py-28">
       <div className="container-site">
-        <div className="relative mx-auto max-w-4xl text-center">
+        <div className="relative mx-auto min-h-[360px] max-w-4xl text-center md:min-h-[420px]">
           <div className="hidden md:block">
-            <div className="absolute -left-2 top-2 h-28 w-28 overflow-hidden rounded-2xl rotate-[-6deg]">
-              <Image src={CTA_PORTRAITS[0].src} alt={CTA_PORTRAITS[0].alt} fill className="object-cover" sizes="112px" />
+            <div className="cta-photo-top absolute left-6 top-16 h-28 w-28 overflow-hidden rounded-2xl rotate-[-6deg] md:h-32 md:w-32">
+              <Image
+                src={CTA_PORTRAITS[0].src}
+                alt={CTA_PORTRAITS[0].alt}
+                fill
+                className="object-cover"
+                sizes="128px"
+              />
             </div>
-            <div className="absolute -right-2 top-2 h-28 w-28 overflow-hidden rounded-2xl rotate-[6deg]">
-              <Image src={CTA_PORTRAITS[1].src} alt={CTA_PORTRAITS[1].alt} fill className="object-cover" sizes="112px" />
+            <div
+              className="cta-photo-top absolute right-6 top-16 h-28 w-28 overflow-hidden rounded-2xl rotate-[6deg] md:h-32 md:w-32"
+              style={{ animationDelay: "180ms" }}
+            >
+              <Image
+                src={CTA_PORTRAITS[1].src}
+                alt={CTA_PORTRAITS[1].alt}
+                fill
+                className="object-cover"
+                sizes="128px"
+              />
             </div>
-            <div className="absolute -left-2 bottom-0 h-28 w-28 overflow-hidden rounded-2xl rotate-[4deg]">
-              <Image src={CTA_PORTRAITS[2].src} alt={CTA_PORTRAITS[2].alt} fill className="object-cover" sizes="112px" />
+            <div className="cta-photo-bottom absolute left-6 bottom-12 h-28 w-28 overflow-hidden rounded-2xl rotate-[4deg] md:h-32 md:w-32">
+              <Image
+                src={CTA_PORTRAITS[2].src}
+                alt={CTA_PORTRAITS[2].alt}
+                fill
+                className="object-cover"
+                sizes="128px"
+              />
             </div>
-            <div className="absolute -right-2 bottom-0 h-28 w-28 overflow-hidden rounded-2xl rotate-[-4deg]">
-              <Image src={CTA_PORTRAITS[3].src} alt={CTA_PORTRAITS[3].alt} fill className="object-cover" sizes="112px" />
+            <div
+              className="cta-photo-bottom absolute right-6 bottom-12 h-28 w-28 overflow-hidden rounded-2xl rotate-[-4deg] md:h-32 md:w-32"
+              style={{ animationDelay: "180ms" }}
+            >
+              <Image
+                src={CTA_PORTRAITS[3].src}
+                alt={CTA_PORTRAITS[3].alt}
+                fill
+                className="object-cover"
+                sizes="128px"
+              />
             </div>
           </div>
           <ScrollReveal>
-            <h2 className="text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl lg:text-6xl">
-              Join 500+ students today!
-            </h2>
-            <p className="mt-4 text-base text-muted md:text-lg">
-              Start your UK admission journey now and join hundreds of Nigerian
-              students already studying at top universities.
-            </p>
-            <div className="mt-8">
-              <a
-                href="https://wa.me/2348123456789?text=Hi%20Crownway%2C%20I%27d%20like%20to%20book%20a%20free%20consultation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-primary-dark"
-              >
-                Book free consultation
-              </a>
+            <div className="mx-auto max-w-2xl pt-20 md:pt-24">
+              <h2 className="text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl lg:text-6xl">
+                Join 500+ students today!
+              </h2>
+              <p className="mt-4 text-base text-muted md:text-lg">
+                Start your UK admission journey now and join hundreds of
+                Nigerian students already studying at top universities.
+              </p>
+              <div className="mt-8">
+                <a
+                  href="https://wa.me/2348123456789?text=Hi%20Crownway%2C%20I%27d%20like%20to%20book%20a%20free%20consultation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-primary-dark"
+                >
+                  Book free consultation
+                </a>
+              </div>
             </div>
           </ScrollReveal>
         </div>

@@ -48,8 +48,8 @@ export function ContactSection() {
                 Get in touch
               </h2>
               <p className="mt-3 max-w-sm text-base text-muted">
-                Have questions about studying in the UK? Send us a message and our
-                team will get back to you within 24 hours.
+                Have questions about studying in the UK? Send us a message and
+                our team will get back to you within 24 hours.
               </p>
             </div>
           </ScrollReveal>
@@ -72,60 +72,62 @@ export function ContactSection() {
                 className="space-y-5 rounded-2xl bg-white p-5"
                 noValidate
               >
-              <div>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  required
-                  maxLength={100}
-                  placeholder="Full name"
-                  className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
-                />
-                {errors.name && (
-                  <p className="mt-1 text-xs text-red-500">{errors.name}</p>
-                )}
-              </div>
+                <div>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    maxLength={100}
+                    placeholder="Full name"
+                    className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
+                  />
+                  {errors.name && (
+                    <p className="mt-1 text-xs text-red-500">{errors.name}</p>
+                  )}
+                </div>
 
-              <div>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  placeholder="Email address"
-                  className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
-                />
-                {errors.email && (
-                  <p className="mt-1 text-xs text-red-500">{errors.email}</p>
-                )}
-              </div>
+                <div>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="Email address"
+                    className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
+                  />
+                  {errors.email && (
+                    <p className="mt-1 text-xs text-red-500">{errors.email}</p>
+                  )}
+                </div>
 
-              <div>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  maxLength={20}
-                  placeholder="Phone / WhatsApp (optional)"
-                  className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
-                />
-              </div>
+                <div>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    maxLength={20}
+                    placeholder="Phone / WhatsApp (optional)"
+                    className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
+                  />
+                </div>
 
-              <div>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows={4}
-                  maxLength={2000}
-                  placeholder="Tell us about your study goals..."
-                  className="w-full resize-none rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
-                />
-                {errors.message && (
-                  <p className="mt-1 text-xs text-red-500">{errors.message}</p>
-                )}
-              </div>
+                <div>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows={4}
+                    maxLength={2000}
+                    placeholder="Tell us about your study goals..."
+                    className="w-full resize-none rounded-xl border border-border bg-surface px-4 py-3.5 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted"
+                  />
+                  {errors.message && (
+                    <p className="mt-1 text-xs text-red-500">
+                      {errors.message}
+                    </p>
+                  )}
+                </div>
 
                 <button
                   type="submit"
@@ -134,27 +136,27 @@ export function ContactSection() {
                   Send
                 </button>
 
-              <div className="flex items-start gap-3">
-                <input
-                  id="consent"
-                  name="consent"
-                  type="checkbox"
-                  className="mt-1 h-4 w-4 rounded border-border text-primary focus:ring-primary"
-                />
-                <label htmlFor="consent" className="text-xs text-muted">
-                  By proceeding, I confirm that I have read and agree to the{" "}
-                  <a
-                    href="/privacy"
-                    className="underline hover:text-secondary transition-colors"
-                  >
-                    Privacy Policy
-                  </a>
-                  .
-                </label>
-              </div>
-              {errors.consent && (
-                <p className="text-xs text-red-500">{errors.consent}</p>
-              )}
+                <div className="flex items-start gap-3">
+                  <input
+                    id="consent"
+                    name="consent"
+                    type="checkbox"
+                    className="mt-1 h-4 w-4 rounded border-border text-primary focus:ring-primary"
+                  />
+                  <label htmlFor="consent" className="text-xs text-muted">
+                    By proceeding, I confirm that I have read and agree to the{" "}
+                    <a
+                      href="/privacy"
+                      className="underline hover:text-secondary transition-colors"
+                    >
+                      Privacy Policy
+                    </a>
+                    .
+                  </label>
+                </div>
+                {errors.consent && (
+                  <p className="text-xs text-red-500">{errors.consent}</p>
+                )}
               </form>
             </ScrollReveal>
           )}

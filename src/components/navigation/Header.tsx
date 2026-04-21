@@ -11,7 +11,26 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white">
       <div className="container-site flex h-16 items-center justify-between lg:h-20">
-        <Link href="/" className="text-xl font-extrabold tracking-tight">
+        <Link
+          href="/"
+          className="flex items-center gap-2 text-xl font-extrabold tracking-tight"
+        >
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-orange-500 via-orange-400 to-amber-300 text-white shadow-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="h-4 w-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4 20 8-16 8 16M7.5 13h9"
+              />
+            </svg>
+          </span>
           Crownway Studies
         </Link>
 

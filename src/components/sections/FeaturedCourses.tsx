@@ -50,7 +50,9 @@ export function FeaturedCourses() {
                       {service.price}
                     </p>
                     {service.note && (
-                      <p className="mt-1 text-xs text-white/60">{service.note}</p>
+                      <p className="mt-1 text-xs text-white/60">
+                        {service.note}
+                      </p>
                     )}
                   </div>
                 </article>

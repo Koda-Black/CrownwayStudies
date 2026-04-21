@@ -79,7 +79,9 @@ export function PlatformSection() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((feature, i) => (
             <ScrollReveal key={feature.title} delay={i * 100}>
-              <div className={`group rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 ${i === 0 ? "bg-[#1f4fff] text-white" : i === 1 ? "bg-[#292027] text-white" : "bg-[#6f4bff] text-white"}`}>
+              <div
+                className={`group rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 ${i === 0 ? "bg-[#1f4fff] text-white" : i === 1 ? "bg-[#292027] text-white" : "bg-[#6f4bff] text-white"}`}
+              >
                 <div className="mb-5 h-14 w-14 overflow-hidden rounded-xl">
                   <Image
                     src={featureImages[i]}

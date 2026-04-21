@@ -14,14 +14,19 @@ export function TestimonialsSection() {
               <h2 className="text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl">
                 Hear from our students
               </h2>
-              <div className="mt-8 flex items-end gap-1 rounded-2xl bg-[#1c4bff] px-6 py-5 text-white">
-                <span className="text-7xl font-black leading-none tracking-tight md:text-8xl">
-                  98%
-                </span>
-                <p className="ml-4 max-w-xs text-sm leading-relaxed text-white/85">
-                  Of our students secured their UK visa on the first attempt and
-                  are now studying at their dream universities.
-                </p>
+              <div className="mt-8 rounded-2xl bg-[#1c4bff] px-6 py-5 text-white">
+                <div className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2">
+                  <span className="row-span-2 text-8xl font-black leading-[0.7] tracking-tight md:text-9xl">
+                    98%
+                  </span>
+                  <p className="self-start pt-1 text-sm leading-relaxed text-white/85">
+                    Of our students secured their UK visa on the first attempt.
+                  </p>
+                  <p className="col-span-2 text-sm leading-relaxed text-white/85">
+                    They are now studying at their dream universities across the
+                    UK.
+                  </p>
+                </div>
               </div>
             </div>
           </ScrollReveal>
