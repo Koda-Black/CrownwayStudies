@@ -40,35 +40,38 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="bg-white py-20 md:py-28">
-      <div className="container-site max-w-2xl">
-        <ScrollReveal>
-          <h2 className="text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl">
-            Get in touch
-          </h2>
-          <p className="mt-3 text-base text-muted">
-            Have questions about studying in the UK? Send us a message and our
-            team will get back to you within 24 hours.
-          </p>
-        </ScrollReveal>
-
-        {submitted ? (
+      <div className="container-site">
+        <div className="grid gap-8 rounded-[28px] bg-surface p-6 md:grid-cols-[1fr_1.1fr] md:p-10">
           <ScrollReveal>
-            <div className="mt-10 rounded-2xl bg-surface p-8 text-center">
-              <p className="text-lg font-semibold text-primary">
-                Thank you for reaching out!
-              </p>
-              <p className="mt-2 text-sm text-muted">
-                We&apos;ll get back to you within 24 hours.
+            <div>
+              <h2 className="text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl">
+                Get in touch
+              </h2>
+              <p className="mt-3 max-w-sm text-base text-muted">
+                Have questions about studying in the UK? Send us a message and our
+                team will get back to you within 24 hours.
               </p>
             </div>
           </ScrollReveal>
-        ) : (
-          <ScrollReveal delay={100}>
-            <form
-              onSubmit={handleSubmit}
-              className="mt-10 space-y-5"
-              noValidate
-            >
+
+          {submitted ? (
+            <ScrollReveal>
+              <div className="rounded-2xl bg-white p-8 text-center">
+                <p className="text-lg font-semibold text-primary">
+                  Thank you for reaching out!
+                </p>
+                <p className="mt-2 text-sm text-muted">
+                  We&apos;ll get back to you within 24 hours.
+                </p>
+              </div>
+            </ScrollReveal>
+          ) : (
+            <ScrollReveal delay={100}>
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-5 rounded-2xl bg-white p-5"
+                noValidate
+              >
               <div>
                 <input
                   id="name"
@@ -124,12 +127,12 @@ export function ContactSection() {
                 )}
               </div>
 
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-primary-dark cursor-pointer"
-              >
-                Send
-              </button>
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-primary-dark cursor-pointer"
+                >
+                  Send
+                </button>
 
               <div className="flex items-start gap-3">
                 <input
@@ -152,9 +155,10 @@ export function ContactSection() {
               {errors.consent && (
                 <p className="text-xs text-red-500">{errors.consent}</p>
               )}
-            </form>
-          </ScrollReveal>
-        )}
+              </form>
+            </ScrollReveal>
+          )}
+        </div>
       </div>
     </section>
   );

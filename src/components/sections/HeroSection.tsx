@@ -20,7 +20,7 @@ export function HeroSection() {
                 starts here
               </h1>
               <p className="mt-6 max-w-md text-base text-muted leading-relaxed md:text-lg">
-                Crownway Admissions helps Nigerian students secure places at top
+                Crownway Studies helps Nigerian students secure places at top
                 UK universities — with expert guidance from application to
                 arrival.
               </p>

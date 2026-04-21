@@ -14,22 +14,22 @@ export function TestimonialsSection() {
               <h2 className="text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl">
                 Hear from our students
               </h2>
-              <div className="mt-8 flex items-end gap-1">
+              <div className="mt-8 flex items-end gap-1 rounded-2xl bg-[#1c4bff] px-6 py-5 text-white">
                 <span className="text-7xl font-black leading-none tracking-tight md:text-8xl">
                   98%
                 </span>
+                <p className="ml-4 max-w-xs text-sm leading-relaxed text-white/85">
+                  Of our students secured their UK visa on the first attempt and
+                  are now studying at their dream universities.
+                </p>
               </div>
-              <p className="mt-3 max-w-xs text-sm text-muted leading-relaxed">
-                Of our students secured their UK visa on the first attempt and
-                are now studying at their dream universities.
-              </p>
             </div>
           </ScrollReveal>
 
           <div className="grid gap-5 sm:grid-cols-2">
             {TESTIMONIALS.map((t, i) => (
               <ScrollReveal key={t.id} delay={i * 80}>
-                <blockquote className="flex h-full flex-col rounded-2xl border border-border bg-white p-6 transition-all duration-300 hover:shadow-md">
+                <blockquote className="flex h-full flex-col rounded-2xl border border-border bg-surface p-6 transition-all duration-300 hover:shadow-md">
                   <p className="flex-1 text-sm leading-relaxed text-secondary/80">
                     &ldquo;{t.quote}&rdquo;
                   </p>

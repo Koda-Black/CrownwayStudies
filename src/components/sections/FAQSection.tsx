@@ -13,7 +13,7 @@ export function FAQSection() {
   };
 
   return (
-    <section className="bg-white py-20 md:py-28">
+    <section className="bg-surface py-20 md:py-28">
       <div className="container-site">
         <ScrollReveal>
           <h2 className="text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl lg:text-6xl">
@@ -76,7 +76,7 @@ export function FAQSection() {
           </div>
 
           <ScrollReveal delay={200}>
-            <div className="rounded-2xl bg-surface p-8 h-fit lg:sticky lg:top-24">
+            <div className="h-fit rounded-2xl border border-border bg-transparent p-8 lg:sticky lg:top-24">
               <h3 className="text-xl font-bold">Ask us anything</h3>
               <p className="mt-3 text-sm text-muted leading-relaxed">
                 Have more questions or need support? Shoot us a message and

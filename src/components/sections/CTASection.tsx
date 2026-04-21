@@ -26,7 +26,21 @@ export function CTASection() {
   return (
     <section className="bg-white py-20 md:py-28">
       <div className="container-site">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="relative mx-auto max-w-4xl text-center">
+          <div className="hidden md:block">
+            <div className="absolute -left-2 top-2 h-28 w-28 overflow-hidden rounded-2xl rotate-[-6deg]">
+              <Image src={CTA_PORTRAITS[0].src} alt={CTA_PORTRAITS[0].alt} fill className="object-cover" sizes="112px" />
+            </div>
+            <div className="absolute -right-2 top-2 h-28 w-28 overflow-hidden rounded-2xl rotate-[6deg]">
+              <Image src={CTA_PORTRAITS[1].src} alt={CTA_PORTRAITS[1].alt} fill className="object-cover" sizes="112px" />
+            </div>
+            <div className="absolute -left-2 bottom-0 h-28 w-28 overflow-hidden rounded-2xl rotate-[4deg]">
+              <Image src={CTA_PORTRAITS[2].src} alt={CTA_PORTRAITS[2].alt} fill className="object-cover" sizes="112px" />
+            </div>
+            <div className="absolute -right-2 bottom-0 h-28 w-28 overflow-hidden rounded-2xl rotate-[-4deg]">
+              <Image src={CTA_PORTRAITS[3].src} alt={CTA_PORTRAITS[3].alt} fill className="object-cover" sizes="112px" />
+            </div>
+          </div>
           <ScrollReveal>
             <h2 className="text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl lg:text-6xl">
               Join 500+ students today!
@@ -44,25 +58,6 @@ export function CTASection() {
               >
                 Book free consultation
               </a>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={200}>
-            <div className="mt-12 flex items-center justify-center -space-x-2">
-              {CTA_PORTRAITS.map((p, i) => (
-                <div
-                  key={i}
-                  className="relative h-16 w-16 overflow-hidden rounded-full border-3 border-white shadow-md md:h-20 md:w-20"
-                >
-                  <Image
-                    src={p.src}
-                    alt={p.alt}
-                    fill
-                    className="object-cover"
-                    sizes="80px"
-                  />
-                </div>
-              ))}
             </div>
           </ScrollReveal>
         </div>

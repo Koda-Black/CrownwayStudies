@@ -2,8 +2,8 @@ export default function JsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "Crownway Admissions Limited",
-    url: "https://crownwayadmissions.com",
+    name: "Crownway Studies Limited",
+    url: "https://crownway-admissions.vercel.app",
     description:
       "UK university admission consultancy for Nigerian students. 500+ successful placements, 98% visa success rate.",
     address: {
@@ -15,11 +15,11 @@ export default function JsonLd() {
       addressCountry: "NG",
     },
     telephone: "+234-812-345-6789",
-    email: "hello@crownwayadmissions.com",
+    email: "hello@crownwaystudies.com",
     sameAs: [
-      "https://instagram.com/crownwayadmissions",
+      "https://instagram.com/crownwaystudies",
       "https://x.com/crownwayadm",
-      "https://tiktok.com/@crownwayadmissions",
+      "https://tiktok.com/@crownwaystudies",
     ],
   };
 

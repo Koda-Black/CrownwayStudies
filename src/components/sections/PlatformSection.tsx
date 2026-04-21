@@ -14,7 +14,7 @@ export function PlatformSection() {
   return (
     <section id="about" className="bg-white py-20 md:py-28">
       <div className="container-site">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <ScrollReveal>
             <div>
               <h2 className="text-4xl font-black leading-[0.95] tracking-tight uppercase md:text-5xl lg:text-6xl">
@@ -53,15 +53,25 @@ export function PlatformSection() {
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
-            <div className="relative mx-auto w-full max-w-[480px] overflow-hidden rounded-3xl">
-              <Image
-                src="https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697dc671b38eb68fe87b64e6_gain-the-skills-to-succeed-1-p-1600.webp"
-                alt="Student progressing through their admission journey"
-                width={480}
-                height={560}
-                className="w-full object-cover"
-                sizes="480px"
-              />
+            <div className="relative mx-auto w-full max-w-[520px] rounded-[28px] bg-[#191c24] p-4">
+              <div className="overflow-hidden rounded-2xl">
+                <Image
+                  src="https://cdn.prod.website-files.com/67754de7a79fd2e4984653b7/697dc671b38eb68fe87b64e6_gain-the-skills-to-succeed-1-p-1600.webp"
+                  alt="Student progressing through their admission journey"
+                  width={520}
+                  height={560}
+                  className="w-full object-cover"
+                  sizes="520px"
+                />
+              </div>
+              <div className="absolute bottom-8 right-8 rounded-xl bg-white px-4 py-3 shadow-lg">
+                <p className="text-xs font-semibold text-muted">2 / 8</p>
+                <div className="mt-2 flex gap-1">
+                  <span className="h-2 w-4 rounded-full bg-amber-300" />
+                  <span className="h-2 w-4 rounded-full bg-orange-400" />
+                  <span className="h-2 w-4 rounded-full bg-orange-500" />
+                </div>
+              </div>
             </div>
           </ScrollReveal>
         </div>
@@ -69,7 +79,7 @@ export function PlatformSection() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((feature, i) => (
             <ScrollReveal key={feature.title} delay={i * 100}>
-              <div className="group rounded-2xl bg-surface p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+              <div className={`group rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 ${i === 0 ? "bg-[#1f4fff] text-white" : i === 1 ? "bg-[#292027] text-white" : "bg-[#6f4bff] text-white"}`}>
                 <div className="mb-5 h-14 w-14 overflow-hidden rounded-xl">
                   <Image
                     src={featureImages[i]}
@@ -80,7 +90,7 @@ export function PlatformSection() {
                   />
                 </div>
                 <h3 className="text-lg font-bold">{feature.title}</h3>
-                <p className="mt-2 text-sm text-muted leading-relaxed">
+                <p className="mt-2 text-sm leading-relaxed text-white/85">
                   {feature.description}
                 </p>
               </div>

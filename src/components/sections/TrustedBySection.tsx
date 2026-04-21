@@ -34,27 +34,29 @@ export function TrustedBySection() {
   return (
     <section className="bg-white py-14 md:py-20">
       <div className="container-site">
-        <ScrollReveal>
-          <h2 className="text-center text-4xl font-black tracking-tight uppercase md:text-5xl">
-            Trusted by leading institutions
-          </h2>
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-10 md:gap-14">
-            {CLIENT_LOGOS.map((logo, i) => (
-              <div
-                key={i}
-                className="relative h-10 w-28 grayscale opacity-60 transition-all hover:grayscale-0 hover:opacity-100"
-              >
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  fill
-                  className="object-contain"
-                  sizes="112px"
-                />
-              </div>
-            ))}
-          </div>
-        </ScrollReveal>
+        <div className="rounded-[28px] bg-surface px-5 py-10 md:px-10 md:py-14">
+          <ScrollReveal>
+            <h2 className="text-center text-4xl font-black tracking-tight uppercase md:text-5xl">
+              Trusted by leading institutions
+            </h2>
+            <div className="mt-12 flex flex-wrap items-center justify-center gap-3 md:gap-4">
+              {CLIENT_LOGOS.map((logo, i) => (
+                <div
+                  key={i}
+                  className="relative h-12 w-32 rounded-xl border border-border bg-white p-2"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    fill
+                    className="object-contain p-2"
+                    sizes="128px"
+                  />
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+        </div>
       </div>
     </section>
   );

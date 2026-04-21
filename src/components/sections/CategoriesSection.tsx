@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/components/animations";
 
 export function CategoriesSection() {
   return (
-    <section id="process" className="bg-surface py-20 md:py-28">
+    <section id="process" className="bg-white py-20 md:py-28">
       <div className="container-site">
         <ScrollReveal>
           <h2 className="text-center text-4xl font-black tracking-tight uppercase leading-[0.95] md:text-5xl lg:text-6xl">
@@ -17,10 +17,10 @@ export function CategoriesSection() {
           </p>
         </ScrollReveal>
 
-        <div className="mt-14 flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {PROCESS_STEPS.map((step, i) => (
             <ScrollReveal key={step.id} delay={i * 80}>
-              <div className="flex w-[260px] flex-shrink-0 flex-col rounded-3xl bg-white p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+              <div className="flex flex-col rounded-3xl border border-border bg-surface p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-lg font-black text-primary">
                   {step.step}
                 </div>

@@ -12,7 +12,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full bg-white">
       <div className="container-site flex h-16 items-center justify-between lg:h-20">
         <Link href="/" className="text-xl font-extrabold tracking-tight">
-          Crownway Admissions
+          Crownway Studies
         </Link>
 
         <nav

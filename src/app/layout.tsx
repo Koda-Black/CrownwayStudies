@@ -10,10 +10,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://crownwayadmissions.com"),
+  metadataBase: new URL("https://crownway-admissions.vercel.app"),
   title: {
-    default: "Crownway Admissions — Your UK Study Journey Starts Here",
-    template: "%s | Crownway Admissions",
+    default: "Crownway Studies — Your UK Study Journey Starts Here",
+    template: "%s | Crownway Studies",
   },
   description:
     "UK university admission consultancy for Nigerian students. 500+ successful placements, 98% visa success rate. Expert guidance from application to arrival.",
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     "Nigerian students UK",
     "admission consultancy Lagos",
   ],
-  authors: [{ name: "Crownway Admissions Limited" }],
+  authors: [{ name: "Crownway Studies Limited" }],
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://crownwayadmissions.com",
-    siteName: "Crownway Admissions",
-    title: "Crownway Admissions — Your UK Study Journey Starts Here",
+    url: "https://crownway-admissions.vercel.app",
+    siteName: "Crownway Studies",
+    title: "Crownway Studies — Your UK Study Journey Starts Here",
     description:
       "UK university admission consultancy for Nigerian students. 500+ successful placements, 98% visa success rate.",
     images: [
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Crownway Admissions",
+        alt: "Crownway Studies",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Crownway Admissions — Your UK Study Journey Starts Here",
+    title: "Crownway Studies — Your UK Study Journey Starts Here",
     description:
       "UK university admission consultancy for Nigerian students. 500+ successful placements, 98% visa success rate.",
     images: ["/og-image.png"],
